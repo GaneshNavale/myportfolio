@@ -1,0 +1,28 @@
+| &nbsp;&nbsp;
+.form
+  = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|    
+    .form-group
+      .input-group
+        .input-group-addon
+          i.fa.fa-at
+        = f.email_field :email, autofocus: true, id: 'remail', class: 'form-control', placeholder: 'Email'
+    .form-group
+      .input-group
+        .input-group-addon
+          i.fa.fa-lock
+        = f.password_field :password, autocomplete: 'off', class: 'form-control', placeholder: 'Password'
+    .form-group
+      .input-group
+        .input-group-addon
+          i.fa.fa-lock
+        = f.password_field :password_confirmation, autocomplete: 'off', class: 'form-control', placeholder: 'Confirm Password'   
+    = f.submit 'Sign up', id: 'register_btn', class: 'btn-block bt-login'
+  .clearfix
+  .login-modal-footer
+    .row
+      .col-xs-8.col-sm-8.col-md-8
+        i.fa.fa-lock
+        = link_to 'Forget Password', new_user_password_path, remote: true
+      .col-xs-4.col-sm-4.col-md-4
+        i.fa.fa-check
+        = link_to 'Sign In', new_user_session_path, remote: true

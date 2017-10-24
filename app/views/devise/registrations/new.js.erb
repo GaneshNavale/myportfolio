@@ -1,0 +1,5 @@
+$('.tab-pane').empty();
+$('li.home, li.profile, li.forget_password').removeClass('active');
+$('#profile.tab-pane').html("<%= j render('new') %>");
+$('li.profile, #profile').addClass('active');
+$('#loginModal').modal('show');

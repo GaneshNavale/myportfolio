@@ -1,0 +1,18 @@
+| &nbsp;&nbsp;
+.form
+	= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f|
+	  .form-group
+	    .input-group
+	      .input-group-addon
+	        i.fa.fa-at
+	      = f.email_field :email, autofocus: true, placeholder: 'Email', class: 'form-control'
+	  = f.submit 'Send me reset password instructions', id: 'reset_btn', class: 'btn btn-block bt-login'
+	  .clearfix
+	  .login-modal-footer
+	    .row
+	      .col-xs-6.col-sm-6.col-md-6
+	        i.fa.fa-check
+	        = link_to 'Sign In', new_user_session_path, remote: true
+	      .col-xs-6.col-sm-6.col-md-6
+	        i.fa.fa-check
+	        = link_to 'Sign Up', new_user_registration_path, remote: true
