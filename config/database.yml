@@ -16,6 +16,4 @@ development:
 
 production:
   <<: *default
-
-production:
   database: myportfolio_production
