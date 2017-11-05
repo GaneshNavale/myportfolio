@@ -16,4 +16,4 @@ development:
 
 production:
   <<: *default
-  database: <%= ENV['DATABASE'] %>
+  database: myportfolio_production
