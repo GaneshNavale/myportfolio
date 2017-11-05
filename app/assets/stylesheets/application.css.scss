@@ -12,65 +12,10 @@
  *
  *= require_tree .
  *= require_self
+ *= require font-awesome
+
  */
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome";
-
-
-.bt-login,.bt-login:hover, .bt-login:active, .bt-login:focus {
-    background-color: #ff8627;
-    color: #ffffff;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    transition: background-color 300ms linear 0s;
-}
-
-.login-tab {
-	margin: 0 auto;
-	max-width: 380px;
-}
-
-.login-modal-header {
-	background: #27ae60;
-	color: #fff;
-}
-
-.login-modal-header .modal-title {
-	color: #fff;
-}
-
-.login-modal-header .close {
-	color: #fff;
-}
-
-.login-modal i {
-	color: #000;
-}
-
-.login-modal form {
-	max-width: 340px;
-}
-
-.tab-pane form {
-	margin: 0 auto;
-}
-.login-modal-footer{
-	margin-top:15px;
-	margin-bottom:15px;
-}
-
-.breadcrumbs a {
-  background: #fe980f none repeat scroll 0 0;
-  color: #ffffff;
-  padding: 3px 7px;
-}
-
-.breadcrumbs {
-  margin-top: 20px;
-}
-
-.badge {
-  background-color: #FE980F;
-}

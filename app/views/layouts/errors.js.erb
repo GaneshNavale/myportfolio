@@ -1,0 +1,6 @@
+$('.error').html('');
+<% @resource.errors.each do |selector, error| %>
+	<% if @resource.errors[selector].first == error %>
+		$('<%=".#{selector}_txt"%>').next('.error').html('<%=error.to_s%>');
+	<% end %>
+<% end %>

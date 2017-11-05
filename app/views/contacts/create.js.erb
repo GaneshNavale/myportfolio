@@ -1,0 +1,3 @@
+$('.flash_messages').html("<%= escape_javascript(render 'shared/flash') %>");
+$('#new_contact').closest('form').find("input, textarea").val('');
+$('.error').val('');
