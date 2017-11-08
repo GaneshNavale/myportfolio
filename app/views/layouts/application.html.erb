@@ -13,15 +13,7 @@
 	<meta name="author" content="Ganesh Navale">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">  
 </head>
-	<body>
-		<!-- =========================
-		     PRE LOADER       
-		============================== -->
-		<section class="preloader" style="display: none;">
-
-			<div class="sk-rotating-plane"></div>
-
-		</section>
+	<body data-target=".navbar-collapse" data-offset="50" data-spy="scroll">
 		<%= render partial: 'layouts/header' %>		
 		<%= yield %>
 

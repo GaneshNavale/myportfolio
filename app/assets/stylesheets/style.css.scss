@@ -163,7 +163,7 @@ hr {
 }
 
 .custom-navbar .navbar-toggle .icon-bar {
-    background: #1385F9;
+    background: #ffffff;
     border-color: transparent;
 }
 
@@ -459,6 +459,10 @@ footer {
 #about .about-des h1 {
     font-size: 50px;
  } 
+
+#about {
+  padding: 250px;
+} 
 }
 
 @media screen and ( max-width: 800px ){
@@ -820,4 +824,8 @@ footer .instagram {
   .navbar-default .navbar-right {
     float: right !important;
   }
+}
+
+.error {
+  color: red;
 }
