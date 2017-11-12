@@ -121,13 +121,13 @@
 		<div class="row">
 			<div class="col-md-6">
 				<!-- about des -->
-				<div class="about-des wow fadeIn animated">
+				<div class="about-des">
           <h3 class='text-center row wow bounceIn animated'> about me..<span>!</span></h3>   
           <br>
 					<p class="row" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">I am Experienced Junior Web Developer with a demonstrated history of working in the information technology and services industry. Skilled in Ruby on Rails, SQL, javascript, Html, JQuery, RSpec . Strong engineering professional with a Bachelor's degree focused in Computer Engineering from Sanjivani College of Engineering , Kopargaon. 
 					</p>                  
 				</div>
-        <div class='work row fadeIn animated'>
+        <div class='work row'>
           <h3 class='text-center row wow bounceIn animated'> Work<span>!</span></h3>   
         <p class="row" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;"> 2016/06 - Present: Ruby on Rails Developer @Allerin</p> 
         </div>        
@@ -189,8 +189,16 @@
                   </div>
               </div>
           </div>
-      </div>			 
-    </div>      
+        <div class='social-icon text-center'>
+          <li class=""><a href="https://www.linkedin.com/in/ganeshnavale/" class="fa fa-linkedin wow fadeIn animated" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.9s; animation-name: fadeIn;"></a></li>
+          <li class=""><a href="https://www.facebook.com/navale.ganesh.52" class="fa fa-github wow fadeIn animated" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.9s; animation-name: fadeIn;"></a></li>
+          <li class=""><a href="https://www.facebook.com/navale.ganesh.52" class="fa fa-facebook wow fadeIn animated" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.9s; animation-name: fadeIn;"></a></li>
+          <li class=""><a href="https://twitter.com/navale_ganesh" class="fa fa-twitter wow fadeIn animated" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.9s; animation-name: fadeIn;"></a></li>
+          <li class=''><a href="https://plus.google.com/u/0/+GaneshNavale1" class="fa fa-google-plus wow fadeIn animated" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.9s; animation-name: fadeIn;"></a></li>
+        </div>    
+      </div>       
+    </div>  
+
 	</div>
 </section>
 
@@ -199,7 +207,9 @@
     CONTACT SECTION   
 ============================== -->
 <section id="contact">
-	<div class="container">    
+	<div class="container">  
+    <div class='row'>
+    </div>  
 		<div class="row">
       <br>
       <br>
@@ -207,7 +217,7 @@
 			<div class="col-md-12 col-sm-12">
 				<h2 class="wow bounceIn animated">Want to say hello? Send me a message…</h2>
         <hr>
-			</div>
+      </div>
 			<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
         <br><br>
 				<!--- contact form here -->
@@ -234,15 +244,7 @@
 					</div>
 					<div class="row wow fadeIn text-center" data-wow-delay="0.3s" style="animation-delay: 0.3s; animation-name: none;">
 						<%= contact.submit 'Send Message',class: "btn btn-primary" %>
-            <h3>Connect with me on social network</h3>       
-            <div class='row wow bounceIn social-icon col-sm-offset-4'>
-              <li><a href="https://www.facebook.com/navale.ganesh.52" class="fa fa-github wow fadeIn animated" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.9s; animation-name: fadeIn;"></a></li>
-              <li><a href="https://www.facebook.com/navale.ganesh.52" class="fa fa-facebook wow fadeIn animated" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.9s; animation-name: fadeIn;"></a></li>
-              <li><a href="https://twitter.com/navale_ganesh" class="fa fa-twitter wow fadeIn animated" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.9s; animation-name: fadeIn;"></a></li>
-              <li><a href="https://www.linkedin.com/in/ganeshnavale/" class="fa fa-linkedin wow fadeIn animated" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.9s; animation-name: fadeIn;"></a></li>
-              <li><a href="https://plus.google.com/u/0/+GaneshNavale1" class="fa fa-google-plus wow fadeIn animated" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.9s; animation-name: fadeIn;"></a></li>
-            </div>
-          </div>
+          </div>            
 				<% end %>
         <br><br>
 			</div>
