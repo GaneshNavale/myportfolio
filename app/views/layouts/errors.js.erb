@@ -3,4 +3,5 @@ $('.error').html('');
 	<% if @resource.errors[selector].first == error %>
 		$('<%=".#{selector}_txt"%>').next('.error').html('<%=error.to_s%>');
 	<% end %>
+	$('.send_msg').attr('disabled', false);
 <% end %>

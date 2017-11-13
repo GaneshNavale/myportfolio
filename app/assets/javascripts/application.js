@@ -17,6 +17,9 @@
 //= require_tree .
 
 $(document).ready(function () {	
+  $('form').on('submit', function() {
+    $('.send_msg').attr('disabled', true);
+  });
   $(document).on("scroll", onScroll);
   
   $('a[href^="#"]').on('click', function (e) {
