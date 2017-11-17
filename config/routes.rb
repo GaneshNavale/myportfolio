@@ -4,4 +4,5 @@ Rails.application.routes.draw do
     registrations: 'user/registrations'
   }
   root 'home#index'
+  resources :contacts
 end

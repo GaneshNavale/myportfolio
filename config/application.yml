@@ -1,10 +1,9 @@
 DATABASE_NAME: myportfolio_development
 DEVISE_SECRET_KEY: d4275e6f696c419b0932f1468a5bcba2ac9559ce6d1757f996924823265ae77eb38b09edb7dc567a0c90e8e4abca86b702a093e2c2bbc9747f90b90c28db0db8
 SECRET_KEY_BASE: 6353a239138dd565e7ff74093572ef7ca4d7be28c95da200100ca7286d3cefdba140ab259c83d9f21bafcf403ec58d218a6a036fafcb257471f5fdaf34a82589
-MAIL_SENDER: 'navaleganesh2011@gmail.com'
+MAIL_SENDER: 'xyz@example.com'
 DATABASE_USERNAME: root
 DATABASE_PASSWORD: root
-
-# App settings
-TITLE_NAME: Ganesh Navale
-TITLE_IMAGE_ID: '1'
+DATABASE: myportfolio_production
+USER_NAME: abc@example.com  
+PASSWORD: password

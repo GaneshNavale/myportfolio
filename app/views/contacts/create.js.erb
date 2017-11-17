@@ -1,0 +1,4 @@
+$('.flash_messages').html("<%= escape_javascript(render 'shared/flash') %>");
+$('#new_contact').closest('form').find("input, textarea").not(".send_msg").val('');
+$('.error').text('');
+$('.send_msg').attr('disabled', false);

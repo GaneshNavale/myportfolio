@@ -1,33 +1,253 @@
-<h1>Ganesh Navale</h1>
+<section id="home">	
+  <%= render partial: 'layouts/header' %> 
+	<div class="container">    
+		<div class="row">
+			<div class="col-md-12 col-sm-12 home">
+				<h1 class="wow fadeIn animated" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s; animation-name: fadeIn;">HI I'M GANESH.</h1>
+				<h4 class="wow fadeIn animated" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.9s; animation-name: fadeIn;">Web App Developer
+        </h4>
+				<a href="#portfolio" class="btn btn-sm btn-default smoothScroll wow fadeInUp animated" data-wow-delay="1.3s" style="visibility: visible; animation-delay: 1.3s; animation-name: fadeInUp;">
+					<i class="fa fa-angle-double-down" style="font-size:30px"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
 
-<p><a href="mailto:navaleganesh2011@gmail.com">navaleganesh2011@gmail.com</a></p>
+<section id="portfolio">
+	<div class="container">
+		<div class="row">
 
-<p>Maharashtra, IN 423601</p>
+			<div class="col-md-12">
+				<h2 class="wow bounceIn animated" style="visibility: visible; animation-name: bounceIn;">Recent work I've done during free time...</h2>
+				<hr>
+   			<!-- iso box section -->
+   			<div class="iso-box-section">
 
-<p>
-	<a href="http://www.linkedin.com/in/ganeshnavale/">in@ganeshnavale</a>
-	<a href="http://stackoverflow.com/users/7804093">so@ganeshnavale</a>
-	<a href="https://www.facebook.com/navale.ganesh.52">fb@ganeshnavale</a>		
-</p>
+   			 	<div class="iso-box-wrapper col4-iso-box">
 
-<h2 id="status">Status</h2>
-<p>Busy working <a href="https://allerin.com/">@Allerin</a>.</p>
+   				 	<div class="iso-box graphic photoshop wallpaper col-md-6">
+   				 		<div class="portfolio-thumb">
+   				 			<a href="https://chatwithfriendz.herokuapp.com/" data-lightbox-gallery="portfolio-gallery">
+   				 				<img src="<%= asset_path('portfolio-img1.jpg') %>" class="fluid-img" alt="portfolio img">
+   				 					<div class="portfolio-overlay">
+   				 						<i class="fa fa-link"></i>
+   				 						<h4>Live Chat Application</h4>
+   				 						<p>View Site at https://chatwithfriendz.herokuapp.com</p>
+   				 					</div>
+   				 			</a>
+   				 		</div>
+   				 	</div>
 
-<h2 id="work">Work</h2>
-<ul>
-	<li>2016 June - Present: Web Developer @ALLERIN</li>
-</ul>
+   				 	<div class="iso-box graphic wallpaper col-md-6">
+   				 		<div class="portfolio-thumb">
+   				 			<a href="#" data-lightbox-gallery="portfolio-gallery">
+   				 				<img src="<%= asset_path('portfolio-img2.jpg') %>" class="fluid-img" alt="portfolio img">
+   				 					<div class="portfolio-overlay">
+   				 						<i class="fa fa-link"></i>
+   				 						<h4>Customize User Authentication with Devise Gem and Bootstrap Modal</h4>
+   				 						<p></p>
+   				 					</div>
+   				 			</a>
+   				 		</div>
+   				 	</div>
 
-<h2 id="stuff_i_do">Stuff I Do</h2>
-<ul>
-	<li>Working on <strong>Ruby On Rails</strong> <a href="#">@allerin</a></li>
-	<li>programming <a href="http://github.com/GaneshNavale">http://github.com/GaneshNavale</a></li>
-	<li>helping geeks <a href="http://stackoverflow.com/users/7804093">http://stackoverflow.com/users/7804093</a></li>
-	<li>professional connects <a href="http://www.linkedin.com/in/ganeshnavale/">@ganeshnavale</a></li>	
-	<li>farming <a href="https://www.google.co.in/maps/place/19%C2%B050'38.6%22N+74%C2%B028'18.8%22E/@19.844068,74.4696863,743m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d19.844068!4d74.471875">Home</a></li>
-</ul>
+   				 	<div class="iso-box wallpaper col-md-12" style="position: relative; height: 350px">
+   				 		<div class="portfolio-thumb">
+   				 			<a href="#" data-lightbox-gallery="portfolio-gallery">
+   				 				<img src="<%= asset_path('portfolio-img5.jpg') %>" class="fluid-img" alt="portfolio img">
+   				 					<div class="portfolio-overlay">
+   				 						<i class="fa fa-link"></i>
+   				 						<h4>Blog application with Rails as Backend and Angular as Frontend </h4>
+   				 						<p>currently working on it.</p>
+   				 					</div>
+   				 			</a>
+   				 		</div>
+   				 	</div>
 
-<h2 id="college">College</h2>
-<ul>	
-	<li>Studied computer engineering with bachelor's degree @ Sanjivani COE</li>
-</ul>
+<!--    				 	<div class="iso-box graphic col-md-6">
+   				 		<div class="portfolio-thumb">
+   				 			<a href="#" data-lightbox-gallery="portfolio-gallery">
+   				 				<img src="<%= asset_path('portfolio-img4.jpg') %>" class="fluid-img" alt="portfolio img">
+   				 					<div class="portfolio-overlay">
+   				 						<i class="fa fa-link"></i>
+                      <h4>Online Shopping Site</h4>
+   				 						<p>.</p>
+   				 					</div>
+   				 			</a>
+   				 		</div>
+   				 	</div>
+
+   				 	<div class="iso-box wallpaper col-md-6">
+   				 		<div class="portfolio-thumb">
+   				 			<a href="#" data-lightbox-gallery="portfolio-gallery">
+   				 				<img src="<%= asset_path('portfolio-img5.jpg') %>" class="fluid-img" alt="portfolio img">
+   				 					<div class="portfolio-overlay">
+   				 						<i class="fa fa-link"></i>
+   				 						<h4>Project title 5</h4>
+   				 						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonumm.</p>
+   				 					</div>
+   				 			</a>
+   				 		</div>
+   				 	</div>
+
+   				 	<div class="iso-box graphic photoshop col-md-6">
+   				 		<div class="portfolio-thumb">
+   				 			<a href="#" data-lightbox-gallery="portfolio-gallery">
+   				 				<img src="<%= asset_path('portfolio-img6.jpg') %>" class="fluid-img" alt="portfolio img">
+   				 					<div class="portfolio-overlay">
+   				 						<i class="fa fa-link"></i>
+   				 						<h4>Project title 6</h4>
+   				 						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonumm.</p>
+   				 					</div>
+   				 			</a>
+   				 		</div>
+   				 	</div> -->
+
+ 				 	</div>
+
+ 				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- =========================
+    ABOUT SECTION   
+============================== -->
+<section id="about">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<!-- about des -->
+				<div class="about-des">
+          <h3 class='text-center row wow bounceIn animated'> about me..<span>!</span></h3>   
+          <br>
+					<p class="row" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">I am Experienced Junior Web Developer with a demonstrated history of working in the information technology and services industry. Skilled in Ruby on Rails, SQL, javascript, Html, JQuery, RSpec . Strong engineering professional with a Bachelor's degree focused in Computer Engineering from Sanjivani College of Engineering , Kopargaon. 
+					</p>                  
+				</div>
+        <div class='work row'>
+          <h3 class='text-center row wow bounceIn animated'> Work<span>!</span></h3>   
+        <p class="row" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;"> 2016/06 - Present: Ruby on Rails Developer @Allerin</p> 
+        </div>        
+			</div>
+      <div class="col-md-6 skills" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.9s; animation-name: fadeIn;">
+
+          <h3 class='text-center row wow bounceIn animated'> Skills..<span>!</span></h3>
+          <div class="skill-item">
+              <div class="progress-title">
+                  RUBY ON RAILS
+              </div>
+              <div class="progress wow fadeIn animated">
+                  <div class="progress-bar progress-bar-skill1" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 79%;">
+                      <span class="sr-only">78</span>
+                  </div>
+              </div>
+          </div>
+
+          <div class="skill-item">
+              <div class="progress-title">
+                  JAVASCRIPT
+              </div>
+              <div class="progress wow fadeIn animated">
+                  <div class="progress-bar progress-bar-skill2" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                      <span class="sr-only">75</span>
+                  </div>
+              </div>
+          </div>
+
+          <div class="skill-item">
+              <div class="progress-title">
+                  HTML AND CSS
+              </div>
+              <div class="progress wow fadeIn animated">
+                  <div class="progress-bar progress-bar-skill3" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 73%;">
+                      <span class="sr-only">70</span>
+                  </div>
+              </div>
+          </div>
+
+          <div class="skill-item">
+              <div class="progress-title">
+                   MySQL DATABASE
+              </div>
+              <div class="progress wow fadeIn animated">
+                  <div class="progress-bar progress-bar-skill4" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 72%;">
+                      <span class="sr-only">72</span>
+                  </div>
+              </div>
+          </div>
+
+          <div class="skill-item">
+              <div class="progress-title">
+                  RSPEC
+              </div>
+              <div class="progress wow fadeIn animated">
+                  <div class="progress-bar progress-bar-skill5" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 76%;">
+                      <span class="sr-only">70</span>
+                  </div>
+              </div>
+          </div>
+        <div class='social-icon text-center'>
+          <li class=""><a href="https://www.linkedin.com/in/ganeshnavale/" class="fa fa-linkedin wow fadeIn animated" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.9s; animation-name: fadeIn;"></a></li>
+          <li class=""><a href="https://www.facebook.com/navale.ganesh.52" class="fa fa-github wow fadeIn animated" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.9s; animation-name: fadeIn;"></a></li>
+          <li class=""><a href="https://www.facebook.com/navale.ganesh.52" class="fa fa-facebook wow fadeIn animated" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.9s; animation-name: fadeIn;"></a></li>
+          <li class=""><a href="https://twitter.com/navale_ganesh" class="fa fa-twitter wow fadeIn animated" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.9s; animation-name: fadeIn;"></a></li>
+          <li class=''><a href="https://plus.google.com/u/0/+GaneshNavale1" class="fa fa-google-plus wow fadeIn animated" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.9s; animation-name: fadeIn;"></a></li>
+        </div>    
+      </div>       
+    </div>  
+
+	</div>
+</section>
+
+
+<!-- =========================
+    CONTACT SECTION   
+============================== -->
+<section id="contact">
+	<div class="container">  
+    <div class='row'>
+    </div>  
+		<div class="row">
+      <br>
+      <br>
+			<div class='flash_messages'> </div>
+			<div class="col-md-12 col-sm-12">
+				<h2 class="wow bounceIn animated">Want to say hello? Send me a message…</h2>
+        <hr>
+      </div>
+			<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
+        <br><br>
+				<!--- contact form here -->
+				<%= form_for Contact.new, remote: true do |contact| %>
+					<div class="col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.3s" style="animation-delay: 0.3s; animation-name: none;">
+						<div class="form-group left-inner-addon">
+							<span class="fa fa-paper-plane"></span>
+							<%= contact.text_field :name, class: "form-control name_txt", placeholder: "Name" %>
+							<div class ='error'></div>
+						</div>
+					</div>	
+					<div class="col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.6s" style="animation-delay: 0.6s; animation-name: none;">
+						<div class="form-group left-inner-addon">
+							<span class="fa fa-envelope-o" aria-hidden="true"></span>
+							<%= contact.email_field :email, class: "form-control email_txt", placeholder: "Email" %>
+							<div class ='error'></div>
+						</div>	
+					</div>
+					<div class="col-md-12 col-sm-12 wow fadeIn" data-wow-delay="0.9s" style="animation-delay: 0.9s; animation-name: none;">
+            <div class="form-group">
+  						<%= contact.text_area :message, class: "form-control message_txt", placeholder: "Message", rows: 8 %>
+  						<div class ='error'></div>
+            </div>
+					</div>
+					<div class="row wow fadeIn text-center" data-wow-delay="0.3s" style="animation-delay: 0.3s; animation-name: none;">
+						<%= contact.submit 'Send Message',class: "send_msg btn btn-primary" %>
+          </div>            
+				<% end %>
+        <br><br>
+			</div>
+    </div>
+	</div>  
+</section>  
