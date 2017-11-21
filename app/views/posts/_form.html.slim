@@ -1,0 +1,10 @@
+= simple_form_for @post do |f|
+  .form-group
+    = f.input :title, class: 'form-control'
+
+  .form-group
+    = f.input :body, as: :ckeditor, input_html: {ckeditor: {toolbar: 'FULL'}}, 
+      class: 'form-control'
+
+  .form-group
+    = f.button :submit, class: 'btn btn-primary'
