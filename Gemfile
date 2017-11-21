@@ -7,6 +7,9 @@ gem 'rails', '4.2.8'
 gem 'pg', '0.20'
 gem 'bootstrap-sass'
 gem 'font-awesome-rails'
+gem 'simple_form', '~> 3.2'
+gem 'ckeditor', '~> 4.1'
+gem 'paperclip'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
