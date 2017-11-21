@@ -1,0 +1,7 @@
+.container
+	.col-sm-11.col-xs-12.blog-content
+  	h2.text-center
+  		= @post.title
+  	h5.text-center
+  		= @post.created_at.strftime('%b %d, %Y')
+  		= raw @post.body
