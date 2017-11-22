@@ -414,16 +414,23 @@ footer .instagram {
   }
 }
 
-@media screen and ( max-width: 360px ){
+@media screen and ( max-width: 360px ) {
 
-#home h1 {
+  #home h1 {
     font-size: 30px;
     line-height: 15px;
-}
+  }
 
-#portfolio .portfolio-thumb .portfolio-overlay {
-    padding-top: 60px;
- }
+  #portfolio .portfolio-thumb .portfolio-overlay {
+    padding: 20px 60px 0px 60px;
+  }
+
+  #portfolio h4 {
+    font-size: 14px;
+  }
+  #portfolio p {
+    font-size: 10px;
+  }
 }
 
 #about {
