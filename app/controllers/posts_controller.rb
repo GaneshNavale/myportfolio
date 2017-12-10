@@ -1,11 +1,10 @@
 class PostsController < ApplicationController
 
 	before_action :find_post, only: [:edit, :update, :show, :destroy]
-	before_action :redirect_if_unauthorized_access!
+  before_action :redirect_if_unauthorized_access!, :set_selected_tab
 
   def index
     @posts = Post.all
-    @selected_tab = { blog: :active }
   end
 
   def new
@@ -22,6 +21,7 @@ class PostsController < ApplicationController
       flash[:alert] = "Error creating new post!"
       render :new
     end
+    reditrect_to posts_path
   end
 
   def edit
@@ -36,6 +36,7 @@ class PostsController < ApplicationController
       flash[:alert] = "Error updating post!"
       render :edit
     end
+    reditrect_to posts_path
   end
 
   def show
@@ -66,6 +67,10 @@ class PostsController < ApplicationController
   		flash[:alert] = 'Access Denied'
   		redirect_to root_path
 		end
-	end
+  end
+  
+  def set_selected_tab
+    @selected_tab = { blog: :active }
+  end
     
 end

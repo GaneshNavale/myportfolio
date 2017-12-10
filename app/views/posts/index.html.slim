@@ -1,6 +1,9 @@
 section#portfolio
 
   .row.col-md-10.col-md-offset-1
+    - if user_signed_in? && current_user.have_permission?
+      .add_new
+      = link_to 'Add New Post', new_post_path
     - @posts.each do |post|
       .modBlogPost
         .row.text-center.title
@@ -10,5 +13,7 @@ section#portfolio
             = raw(post.body).truncate(358)
         .row.text-center
           = link_to 'READ MORE', post_path(post), class: 'btn btn-primary'
-          = link_to "Destroy",  post_path(post), method: :delete, class: "btn btn-primary space-10", data: { confirm: "Are you sure?" }
+          - if user_signed_in? && current_user.have_permission?
+            = link_to "Destroy",  post_path(post), method: :delete, class: "btn btn-primary space-10", data: { confirm: "Are you sure?" }
+            = link_to 'Edit' , edit_post_path(post), class: 'btn btn-primary space-10'
         br
