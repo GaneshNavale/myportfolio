@@ -1,6 +1,6 @@
-<section id="home">	
-  <%= render partial: 'layouts/header' %> 
-	<div class="container">    
+<section id="home">
+  <%= render partial: 'layouts/header' %>
+	<div class="container">
 		<div class="row">
 			<div class="col-md-12 col-sm-12 home">
 				<h1 class="wow fadeIn animated" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s; animation-name: fadeIn;">HI I'M GANESH.</h1>
@@ -30,10 +30,10 @@
    				 		<div class="portfolio-thumb">
    				 			<a href="https://chatwithfriendz.herokuapp.com/" data-lightbox-gallery="portfolio-gallery">
    				 				<img src="<%= asset_path('portfolio-img1.jpg') %>" class="fluid-img" alt="portfolio img">
-   				 					<div class="portfolio-overlay">
-   				 						<i class="fa fa-link"></i>
-   				 						<h4>Live Chat Application</h4>
-                    </div>
+								<div class="portfolio-overlay">
+									<i class="fa fa-link"></i>
+									<h4>Live Chat Application</h4>
+								</div>
    				 			</a>
    				 		</div>
    				 	</div>
@@ -56,7 +56,7 @@
    				 				<img src="<%= asset_path('portfolio-img5.jpg') %>" class="fluid-img" alt="portfolio img">
    				 					<div class="portfolio-overlay">
    				 						<i class="fa fa-link"></i>
-   				 						<h4>Currently working on web application where Rails 5 is used as Backend and Angular as Frontend </h4> 				 					   	
+   				 						<h4>Currently working on web application where Rails 5 is used as Backend and Angular as Frontend </h4>
                     </div>
    				 			</a>
    				 		</div>
@@ -111,7 +111,7 @@
 
 
 <!-- =========================
-    ABOUT SECTION   
+    ABOUT SECTION
 ============================== -->
 <section id="about">
 	<div class="container">
@@ -119,19 +119,19 @@
 			<div class="col-md-6">
 				<!-- about des -->
 				<div class="about-des">
-          <h3 class='text-center row wow bounceIn animated'> about me..<span>!</span></h3>   
+          <h3 class='text-center row wow bounceIn animated'> about me..<span>!</span></h3>
           <br>
 					<p class="row" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">I am Experienced Web Developer with a demonstrated history of working in the information technology and services industry.Strong engineering professional with a Bachelor's degree focused in Computer Engineering from Sanjivani College of Engineering , Kopargaon. </p>
 					<p>
 						I love to work on applications where I can add value to a product and create features that make a real difference to the end users.
-					</p>       
+					</p>
 
 			  	<div class='work row text-center'>
-			    	<h3 class=' row wow bounceIn animated'> Work<span>!</span></h3>   
+			    	<h3 class=' row wow bounceIn animated'> Work<span>!</span></h3>
 			      <p class="row" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;"> 2016/06 - Present: Ruby on 	Rails Developer @Allerin
-			      </p> 
-			    </div>             
-				</div>	    
+			      </p>
+			    </div>
+				</div>
 			</div>
       <div class="col-md-6 skills" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.9s; animation-name: fadeIn;">
 
@@ -197,21 +197,21 @@
           <li class=""><a href="https://www.facebook.com/navale.ganesh.52" class="fa fa-facebook wow fadeIn animated" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.9s; animation-name: fadeIn;"></a></li>
           <li class=""><a href="https://twitter.com/navale_ganesh" class="fa fa-twitter wow fadeIn animated" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.9s; animation-name: fadeIn;"></a></li>
           <li class=''><a href="https://plus.google.com/u/0/+GaneshNavale1" class="fa fa-google-plus wow fadeIn animated" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.9s; animation-name: fadeIn;"></a></li>
-        </div>    
-      </div> 
+        </div>
+      </div>
 
-    </div>          
+    </div>
 	</div>
 </section>
 
 
 <!-- =========================
-    CONTACT SECTION   
+    CONTACT SECTION
 ============================== -->
 <section id="contact">
-	<div class="container">  
+	<div class="container">
     <div class='row'>
-    </div>  
+    </div>
 		<div class="row">
       <br>
       <br>
@@ -230,13 +230,13 @@
 							<%= contact.text_field :name, class: "form-control name_txt", placeholder: "Name" %>
 							<div class ='error'></div>
 						</div>
-					</div>	
+					</div>
 					<div class="col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.6s" style="animation-delay: 0.6s; animation-name: none;">
 						<div class="form-group left-inner-addon">
 							<span class="fa fa-envelope-o" aria-hidden="true"></span>
 							<%= contact.email_field :email, class: "form-control email_txt", placeholder: "Email" %>
 							<div class ='error'></div>
-						</div>	
+						</div>
 					</div>
 					<div class="col-md-12 col-sm-12 wow fadeIn" data-wow-delay="0.9s" style="animation-delay: 0.9s; animation-name: none;">
             <div class="form-group">
@@ -246,10 +246,10 @@
 					</div>
 					<div class="row wow fadeIn text-center" data-wow-delay="0.3s" style="animation-delay: 0.3s; animation-name: none;">
 						<%= contact.submit 'Send Message',class: "send_msg btn btn-primary" %>
-          </div>            
+          </div>
 				<% end %>
         <br><br>
 			</div>
     </div>
-	</div>  
-</section>  
+	</div>
+</section>
