@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   root 'home#index'
   resources :contacts
   resources :posts
+  resources :portfolio
+  resource :contact
 end
