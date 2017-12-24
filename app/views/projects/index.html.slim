@@ -1,0 +1,18 @@
+section#portfolio
+	.container
+		.row
+			.col-md-12
+				h2.wow.bounceIn.animated style=("visibility: visible; animation-name: bounceIn;")
+				 = "Recent work I've done during free time..."
+				hr
+   			.iso-box-section
+   			 	.iso-box-wrapper.col4-iso-box
+            - @projects.each do |project|
+              .iso-box.graphic.photoshop.wallpaper.col-md-6
+                .portfolio-thumb
+                  a href="#{project.url}" data-lightbox-gallery="portfolio-gallery"
+                    img.fluid-img alt=("portfolio img") src=asset_path('portfolio-img1.jpg')
+                    .portfolio-overlay
+                      i.fa.fa-link
+                      h4= project.name
+                      = project.description.html_safe

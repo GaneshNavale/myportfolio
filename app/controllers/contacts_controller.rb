@@ -1,10 +1,12 @@
 class ContactsController < ApplicationController
 	
 	def index
+		@selected_tab = { contact: :active }
 	end
 
 	def new
 		@contact = Contact.new
+		@selected_tab = { contact: :active }
 	end
 
 	def create
