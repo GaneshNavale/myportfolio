@@ -1,0 +1,28 @@
+section#contact
+	.container
+    .row
+		.row
+			.flash_messages
+			.col-md-12.col-sm-12
+				h2.wow.bounceIn.animated
+					= 'Want to say hello? Send me a message…'
+        hr
+			.col-md-offset-2.col-md-8.col-sm-offset-2.col-sm-8
+				= form_for Contact.new, remote: true do |contact|
+					.col-md-6.col-sm-6.wow.fadeIn data-wow-delay="0.3s" style=("animation-delay: 0.3s; animation-name: none;")
+						.form-group.left-inner-addon
+							span.fa.fa-paper-plane
+							= contact.text_field :name, class: "form-control name_txt", placeholder: "Name"
+							.error
+					.col-md-6.col-sm-6.wow.fadeIn data-wow-delay="0.6s" style=("animation-delay: 0.6s; animation-name: none;")
+						.form-group.left-inner-addon							
+							span.fa.fa-envelope-o
+							= contact.email_field :email, class: "form-control email_txt", placeholder: "Email"
+							.error					
+					.col-md-12.col-sm-12.wow.fadeIn data-wow-delay="0.9s" style=("animation-delay: 0.9s; animation-name: none;")
+						.form-group
+  						= contact.text_area :message, class: "form-control message_txt", placeholder: "Message", rows: 8
+  						.error
+					.row.wow.fadeIn.text-center data-wow-delay="0.3s" style=("animation-delay: 0.3s; animation-name: none;")
+						= contact.submit 'Send Message', class: "send_msg btn btn-primary"
+    

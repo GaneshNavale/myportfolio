@@ -1,6 +1,10 @@
 class ContactsController < ApplicationController
-
+	
 	def index
+	end
+
+	def new
+		@contact = Contact.new
 	end
 
 	def create
@@ -16,12 +20,10 @@ class ContactsController < ApplicationController
 	def show
 	end
 
-	private
-
 	def contact_params
 		params.require(:contact).permit(:name, :email, :message)
 	end
-
+	
 	def message_body
 		"Hi \nMessage from #{@contact.name} \n message is :\n #{@contact.message}"
 	end

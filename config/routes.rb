@@ -5,8 +5,7 @@ Rails.application.routes.draw do
     registrations: 'user/registrations'
   }
   root 'home#index'
-  resources :contacts
   resources :posts
-  resources :portfolio
-  resource :contact
+  resources :portfolios
+  resources :contacts
 end

@@ -62,52 +62,7 @@
    				 		</div>
    				 	</div>
 
-<!--    				 	<div class="iso-box graphic col-md-6">
-   				 		<div class="portfolio-thumb">
-   				 			<a href="#" data-lightbox-gallery="portfolio-gallery">
-   				 				<img src="<%= asset_path('portfolio-img4.jpg') %>" class="fluid-img" alt="portfolio img">
-   				 					<div class="portfolio-overlay">
-   				 						<i class="fa fa-link"></i>
-                      <h4>Online Shopping Site</h4>
-   				 						<p>.</p>
-   				 					</div>
-   				 			</a>
-   				 		</div>
-   				 	</div>
 
-   				 	<div class="iso-box wallpaper col-md-6">
-   				 		<div class="portfolio-thumb">
-   				 			<a href="#" data-lightbox-gallery="portfolio-gallery">
-   				 				<img src="<%= asset_path('portfolio-img5.jpg') %>" class="fluid-img" alt="portfolio img">
-   				 					<div class="portfolio-overlay">
-   				 						<i class="fa fa-link"></i>
-   				 						<h4>Project title 5</h4>
-   				 						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonumm.</p>
-   				 					</div>
-   				 			</a>
-   				 		</div>
-   				 	</div>
-
-   				 	<div class="iso-box graphic photoshop col-md-6">
-   				 		<div class="portfolio-thumb">
-   				 			<a href="#" data-lightbox-gallery="portfolio-gallery">
-   				 				<img src="<%= asset_path('portfolio-img6.jpg') %>" class="fluid-img" alt="portfolio img">
-   				 					<div class="portfolio-overlay">
-   				 						<i class="fa fa-link"></i>
-   				 						<h4>Project title 6</h4>
-   				 						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonumm.</p>
-   				 					</div>
-   				 			</a>
-   				 		</div>
-   				 	</div> -->
-
- 				 	</div>
-
- 				</div>
-			</div>
-		</div>
-	</div>
-</section>
 
 
 <!-- =========================
@@ -200,56 +155,6 @@
         </div>
       </div>
 
-    </div>
-	</div>
-</section>
-
-
-<!-- =========================
-    CONTACT SECTION
-============================== -->
-<section id="contact">
-	<div class="container">
-    <div class='row'>
-    </div>
-		<div class="row">
-      <br>
-      <br>
-			<div class='flash_messages'> </div>
-			<div class="col-md-12 col-sm-12">
-				<h2 class="wow bounceIn animated">Want to say hello? Send me a message…</h2>
-        <hr>
-      </div>
-			<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
-        <br><br>
-				<!--- contact form here -->
-				<%= form_for Contact.new, remote: true do |contact| %>
-					<div class="col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.3s" style="animation-delay: 0.3s; animation-name: none;">
-						<div class="form-group left-inner-addon">
-							<span class="fa fa-paper-plane"></span>
-							<%= contact.text_field :name, class: "form-control name_txt", placeholder: "Name" %>
-							<div class ='error'></div>
-						</div>
-					</div>
-					<div class="col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.6s" style="animation-delay: 0.6s; animation-name: none;">
-						<div class="form-group left-inner-addon">
-							<span class="fa fa-envelope-o" aria-hidden="true"></span>
-							<%= contact.email_field :email, class: "form-control email_txt", placeholder: "Email" %>
-							<div class ='error'></div>
-						</div>
-					</div>
-					<div class="col-md-12 col-sm-12 wow fadeIn" data-wow-delay="0.9s" style="animation-delay: 0.9s; animation-name: none;">
-            <div class="form-group">
-  						<%= contact.text_area :message, class: "form-control message_txt", placeholder: "Message", rows: 8 %>
-  						<div class ='error'></div>
-            </div>
-					</div>
-					<div class="row wow fadeIn text-center" data-wow-delay="0.3s" style="animation-delay: 0.3s; animation-name: none;">
-						<%= contact.submit 'Send Message',class: "send_msg btn btn-primary" %>
-          </div>
-				<% end %>
-        <br><br>
-			</div>
     </div>
 	</div>
 </section>
