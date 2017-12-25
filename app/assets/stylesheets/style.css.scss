@@ -133,7 +133,7 @@ hr {
 }
 
 #home h1 {
-	font-size: 65px;
+	font-size: 40px;
     font-weight: bold;
     letter-spacing: 2px;
 }
@@ -380,8 +380,6 @@ footer {
     padding-top: 80px;
 }
 
-
-
 #about .about-des h1 {
     font-size: 50px;
  } 
@@ -417,7 +415,7 @@ footer .instagram {
 @media screen and ( max-width: 360px ) {
 
   #home h1 {
-    font-size: 30px;
+    font-size: 23px;
     line-height: 15px;
   }
 
@@ -497,4 +495,12 @@ footer, .send_msg {
 
 .blog-content a:hover {
   color: #62DFE4;
+}
+
+.navbar-fixed-top h1 {
+	color: #fff
+}
+
+.orange {
+	color: #df6113;
 }

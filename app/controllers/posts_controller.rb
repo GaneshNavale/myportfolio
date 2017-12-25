@@ -5,10 +5,12 @@ class PostsController < ApplicationController
 
   def index
     @posts = Post.all
+    @selected_tab = { blog: :active }
   end
 
   def new
     @post = Post.new
+    @selected_tab = { blog: :active }
   end
 
   def create
@@ -23,6 +25,7 @@ class PostsController < ApplicationController
   end
 
   def edit
+    @selected_tab = { blog: :active }
   end
 
   def update

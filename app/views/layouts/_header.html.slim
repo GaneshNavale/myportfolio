@@ -1,18 +1,21 @@
-.navbar-fixed-top role="navigation" 
-  .pull-right
-    .navbar-header
-      button.navbar-toggle data-target=".navbar-collapse" data-toggle="collapse" 
-        span.icon.icon-bar
-        span.icon.icon-bar
-        span.icon.icon-bar
-    span.decor
-    nav.collapse.navbar-collapse
-      ul.primary
-        li.nav-link class= @selected_tab[:home]
-					= link_to 'HOME', root_path
-        li.nav-link class= @selected_tab[:project]
-					= link_to 'PORTFOLIO', projects_path
-        li.nav-link class= @selected_tab[:about]
-          a href="#"  ABOUT ME
-        li.nav-link class= @selected_tab[:contact]
-          = link_to 'CONTACT', new_contact_path
+.navbar-fixed-top.container role="navigation" 
+  .row
+    .pull-right
+      .navbar-header
+        button.navbar-toggle data-target=".navbar-collapse" data-toggle="collapse" 
+          span.icon.icon-bar
+          span.icon.icon-bar
+          span.icon.icon-bar
+      span.decor
+      nav.collapse.navbar-collapse
+        ul.primary
+          li.nav-link class= @selected_tab[:home]
+            = link_to 'HOME', root_path
+          li.nav-link class= @selected_tab[:project]
+            = link_to 'PORTFOLIO', projects_path
+          li.nav-link class= @selected_tab[:blog]
+            = link_to 'BLOG', posts_path            
+          li.nav-link class= @selected_tab[:about]
+            a href="#"  ABOUT ME
+          li.nav-link class= @selected_tab[:contact]
+            = link_to 'CONTACT', new_contact_path

@@ -1,11 +1,11 @@
-.container
-  .col-sm-10.col-sm-offset-1.col-xs-12.blog-content
+section#portfolio
+  .col-sm-10.col-sm-offset-1.col-xs-12
     - @posts.each do |post|
-      .col-xs-12
-        .text-center
-          h2 = post.title
+      .col-xs-12.modBlogPost
+        .text-center.title
+          h2.orange = post.title
           h6 = post.created_at.strftime('%b %d, %Y')
-          .read_more
+          .read_more.content
             = raw(post.body).truncate(358)
         .text-center
           = link_to "READ MORE", post_path(post)

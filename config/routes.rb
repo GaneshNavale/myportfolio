@@ -6,7 +6,6 @@ Rails.application.routes.draw do
   }
   root 'home#index'
   resources :posts
-  resources :portfolios
   resources :contacts
   resources :projects
 end

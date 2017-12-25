@@ -82,7 +82,6 @@ nav {
   border-bottom-left-radius: 8px;
 }
 
-
 /* prime */
 .primary {
   background: #2B2B2B;
@@ -93,7 +92,7 @@ nav {
 ul.primary li a {
   display: block;
   padding: 20px 20px;
-  border-right: 1px solid #3D3D3D;
+  border-right: 1px solid #1385F9;
 }
 
 ul.primary li:last-child a {
@@ -162,4 +161,26 @@ ul.primary li:hover > a{
     color: #ccc;
     background: none;
   }
+}
+
+.modBlogPost {
+  background: #f9f9f9 none repeat scroll 0 0;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  color: #333333;
+  margin: 0 0 45px;
+  padding: 0 40px;
+}
+
+.modBlogPost .content {
+  padding-top: 1px;
+}
+
+.modBlogPost .title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-left: -40px;
+  margin-top: 2em;
+  text-align: center;
 }
