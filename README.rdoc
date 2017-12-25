@@ -1,7 +1,7 @@
-* Portfolio
+* *Portfolio*
 
 This portfolio is a showcase of my work and my capabilities. This portfolios will grow as I implement what I learn
 
-* Deployed
+* *Deployed*
 
 This portfolio has been deployed to Amazon EC2 and can be found here: http://ganeshnavale.me
