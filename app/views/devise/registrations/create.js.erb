@@ -1,0 +1,17 @@
+$('.error').html('');
+$('.has-error').removeClass('has-error');
+<% if resource.errors.blank? %>
+ 	<% if user_signed_in? %>
+		$('#loginModal').modal('hide');
+		$('.sign_in, .sign_up').addClass('hide');
+		$('.sign_out').removeClass('hide');
+		<% flash.now[:success] = "Welcome! You have signed up successfully."%>
+		$('.flash_messages').html("<%= escape_javascript(render 'shared/flash') %>");
+	<% end %> 	
+<% else %>
+	<% resource.errors.each do |selector, error| %>
+		<% if resource.errors[selector].first == error %>
+			$('<%=".#{selector}_txt"%>').addClass('has-error').next('.error').html('<%=error.to_s%>');
+		<% end %>	
+	<% end %>
+<% end %>

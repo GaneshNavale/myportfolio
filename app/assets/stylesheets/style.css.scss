@@ -1,8 +1,4 @@
 
-a {
-  color: #4fbfa8;
-  text-decoration: none;
-}
 a:hover,
 a:focus {
   color: #348e7b;
@@ -112,7 +108,7 @@ hr {
 /*---------------------------------------
    3 Home section              
 -----------------------------------------*/
-#home {
+#home_page {
     background: asset-data-url('home.jpg') no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
@@ -132,17 +128,13 @@ hr {
     text-align: center;    
 }
 
-#home h1 {
+#home_page h1 {
 	font-size: 40px;
     font-weight: bold;
     letter-spacing: 2px;
 }
 
-.home {
-  padding-top: 250px;
-}
-
-#home .btn {
+#home_page .btn {
     background: #ccc;
     border: 2px solid #ffffff;
     color: #ffffff;
@@ -156,7 +148,7 @@ hr {
     opacity: 0.7;
 }
 
-#home .btn:hover {
+#home_page .btn:hover {
     background: #1385F9;    
     border-color: transparent;
 }
@@ -366,7 +358,7 @@ footer {
     background: #007FFF;
 }
 
-#home .navbar-fixed-top {
+#home_page .navbar-fixed-top {
   text-align: center;
 }
 
@@ -407,14 +399,14 @@ footer .instagram {
 }
 
 @media screen and ( max-width: 601px ) {
-  #home .navbar-fixed-top {
+  #home_page .navbar-fixed-top {
     text-align: right;
   }
 }
 
 @media screen and ( max-width: 360px ) {
 
-  #home h1 {
+  #home_page h1 {
     font-size: 23px;
     line-height: 15px;
   }
@@ -436,10 +428,6 @@ footer .instagram {
     float:none !important; 
     margin-top: 100px;
     margin-bottom:  100px;  
-}
-
-.error {
-  color: red;
 }
 
 .navbar-toggle .icon-bar { 

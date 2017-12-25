@@ -1,7 +1,9 @@
-.container
-	.col-sm-11.col-xs-12.blog-content
-  	h2.text-center
-  		= @post.title
-  	h5.text-center
-  		= @post.created_at.strftime('%b %d, %Y')
-  		= raw @post.body
+section#portfolio
+	.container
+	  .row
+	  	.title
+	      h2.orange= @post.title
+	      h6.orange.text-center= @post.created_at.strftime('%b %d, %Y')	
+		.row
+			.modBlogPost
+				= raw @post.body

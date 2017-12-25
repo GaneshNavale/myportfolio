@@ -1,6 +1,6 @@
 | &nbsp;&nbsp;
 .form
-  = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+  = form_for(resource, as: resource_name, url: session_path(resource_name), remote: true) do |f|
     .form-group
       .input-group
         .input-group-addon
@@ -11,7 +11,7 @@
         .input-group-addon
           i.fa.fa-lock
         = f.password_field :password, autocomplete: 'off', class: 'form-control', id: 'password', placeholder: 'Password'
-    = f.submit 'Log in', class: 'btn btn-block bt-login'
+    = f.submit 'Log in', class: 'btn btn-block btn btn-primary'
   .clearfix
   .login-modal-footer
     .row

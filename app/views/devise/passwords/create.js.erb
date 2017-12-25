@@ -1,0 +1,13 @@
+$('.error').html('');
+$('.has-error').removeClass('has-error');
+<% if resource.errors.blank? %>
+	<% flash.now[:success] = 'You will receive an email with instructions on how to reset your password in a few minutes.' %>
+	$('.flash_messages').html("<%= escape_javascript(render 'shared/flash') %>");	
+	$('#loginModal').modal('hide'); 
+<% else %>
+	<% resource.errors.each do |selector, error| %>
+		<% if resource.errors[selector].first == error %>
+			$('<%=".#{selector}_txt"%>').addClass('has-error').next('.error').html('<%=error.to_s%>');
+		<% end %>	
+	<% end %>
+<% end %>

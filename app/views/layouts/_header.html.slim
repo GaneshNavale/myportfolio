@@ -16,6 +16,10 @@
           li.nav-link class= @selected_tab[:blog]
             = link_to 'BLOG', posts_path            
           li.nav-link class= @selected_tab[:about]
-            a href="#"  ABOUT ME
+            a href="#" ABOUT
           li.nav-link class= @selected_tab[:contact]
             = link_to 'CONTACT', new_contact_path
+          li.nav-link.sign_out class= ("hide" unless user_signed_in?)
+            = link_to 'SIGN OUT', destroy_user_session_path, method: :delete 
+          li.nav-link.sign_in class= ("hide" if user_signed_in?)
+            = link_to 'SIGN IN', new_user_session_path, remote: true

@@ -1,27 +1,15 @@
 class User::SessionsController < Devise::SessionsController
-  # before_action :configure_sign_in_params, only: [:create]
-
+  skip_before_action :verify_authenticity_token, only: :destroy
   respond_to :js
 
-  # GET /resource/sign_in
-  # def new
-  #   super
-  # end
+  def create
+    self.resource = warden.authenticate(auth_options)
+    if resource && resource.active_for_authentication?
+      flash.now[:success] = 'Signed in successfully.'
+      sign_in(resource_name, resource)      
+    else
+      flash.now[:danger] = 'Invalid Email or Password'
+    end
+  end
 
-  # POST /resource/sign_in
-  # def create
-  #   super
-  # end
-
-  # DELETE /resource/sign_out
-  # def destroy
-  #   super
-  # end
-
-  # protected
-
-  # If you have extra params to permit, append them to the sanitizer.
-  # def configure_sign_in_params
-  #   devise_parameter_sanitizer.permit(:sign_in, keys: [:attribute])
-  # end
 end

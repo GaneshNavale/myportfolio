@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title
+    	= 'Ganesh Navale'
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+    meta content=("text/html; charset=UTF-8") http-equiv="content-type"
+    meta charset="UTF-8"
+    meta content="IE=Edge" http-equiv="X-UA-Compatible"
+    meta content=("Ganesh Navale") name="description"
+    meta content="Ganesh, Navale, Ganesh Navale, Freelancers, Web Developer, Developer, Web" name="keywords"
+    meta content=("Ganesh Navale") name="author"
+    meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"
+  body
+    - unless user_signed_in?
+      = render template: 'layouts/user_login_modal'
+    = render partial: 'layouts/header'
+    = yield
+    = render partial: 'layouts/footer'

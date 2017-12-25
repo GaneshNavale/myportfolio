@@ -1,0 +1,8 @@
+<% if user_signed_in? %>
+	$('#loginModal').modal('hide');
+	$('.sign_in, .sign_up').addClass('hide');
+	$('.sign_out').removeClass('hide');
+	$('.flash_messages').html("<%= escape_javascript(render 'shared/flash') %>");	
+<% else %>
+	$('.devise_error_messages').html("<%= escape_javascript(render 'shared/flash') %>");
+<% end %>	

@@ -36,7 +36,7 @@ class PostsController < ApplicationController
       flash[:alert] = "Error updating post!"
       render :edit
     end
-    reditrect_to posts_path
+    reditrect_to post_path(@post)
   end
 
   def show

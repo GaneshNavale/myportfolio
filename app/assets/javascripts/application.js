@@ -18,6 +18,11 @@
 //= require_tree .
 
 $(document).ready(function () {	
+
+  $('.login-tab li a, .login-modal button.close').on('click', function() {
+      $('.devise_error_messages').html('');
+  });
+
   $('form').on('submit', function() {
     $('.send_msg').attr('disabled', true);
   });

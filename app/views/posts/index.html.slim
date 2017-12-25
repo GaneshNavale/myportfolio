@@ -6,12 +6,13 @@ section#portfolio
       = link_to 'Add New Post', new_post_path
     - @posts.each do |post|
       .modBlogPost
-        .row.text-center.title
-          h2.orange = post.title
-          h6 = post.created_at.strftime('%b %d, %Y')
+        .row
+          .title
+            h2.orange= post.title
+            h6 = post.created_at.strftime('%b %d, %Y')
           .read_more.content
-            = raw(post.body).truncate(358)
-        .row.text-center
+            = raw(post.body).truncate(358).html_safe
+        .row
           = link_to 'READ MORE', post_path(post), class: 'btn btn-primary'
           - if user_signed_in? && current_user.have_permission?
             = link_to "Destroy",  post_path(post), method: :delete, class: "btn btn-primary space-10", data: { confirm: "Are you sure?" }
