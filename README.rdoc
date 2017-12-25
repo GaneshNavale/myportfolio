@@ -1,28 +1,7 @@
-== README
+* Portfolio
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This portfolio is a showcase of my work and my capabilities. This portfolios will grow as I implement what I learn
 
-Things you may want to cover:
+* Deployed
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+This portfolio has been deployed to Amazon EC2 and can be found here: http://ganeshnavale.me

@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
 
-	before_action :find_post, only: [:edit, :update, :show, :delete]
+	before_action :find_post, only: [:edit, :update, :show, :destroy]
 	before_action :redirect_if_unauthorized_access!
 
   def index
@@ -48,6 +48,7 @@ class PostsController < ApplicationController
     else
       flash[:alert] = "Error updating post!"
     end
+    reditrect_to posts_path
   end
 
   private
