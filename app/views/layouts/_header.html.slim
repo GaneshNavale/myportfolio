@@ -13,10 +13,11 @@
             = link_to 'HOME', root_path
           li.nav-link class= @selected_tab[:project]
             = link_to 'PORTFOLIO', projects_path
-          li.nav-link class= @selected_tab[:blog]
-            = link_to 'BLOG', posts_path            
+          - if Post.any? || current_user.try(:is_admin?)
+            li.nav-link class= @selected_tab[:blog]
+              = link_to 'BLOG', posts_path            
           li.nav-link class= @selected_tab[:about]
-            a href="#" ABOUT
+            = link_to 'ABOUT', about_path
           li.nav-link class= @selected_tab[:contact]
             = link_to 'CONTACT', new_contact_path
           li.nav-link.sign_out class= ("hide" unless user_signed_in?)

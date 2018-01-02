@@ -1,9 +1,10 @@
-section#portfolio
+section#post
 	.container
-	  .row
-	  	.title
-	      h2.orange= @post.title
-	      h6.orange.text-center= @post.created_at.strftime('%b %d, %Y')	
-		.row
-			.modBlogPost
-				= raw @post.body
+		.modBlogPost
+		  .row
+		  	.title
+		      h1.orange.text-center= @post.title
+	      	h6.orange.text-center= @post.created_at.strftime('%b %d, %Y')	
+			.row
+				.content.padding-10
+					= @post.body.html_safe

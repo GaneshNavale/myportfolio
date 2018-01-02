@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   }
 
   root 'home#index'
+  get 'about', controller: 'home'
   resources :posts
   resources :contacts
   resources :projects

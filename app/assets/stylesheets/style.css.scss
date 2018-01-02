@@ -29,7 +29,7 @@ h3 {letter-spacing: 1px;}
 -----------------------------------------*/
 
 /* portfolio, about */
-#portfolio, #about {
+#portfolio, #about, #post {
     padding-top: 80px;
 }
 
@@ -495,4 +495,20 @@ footer, .send_msg {
 
 .space-10 {
   margin-left: 10px;
+}
+
+.padding-10 {
+ padding-right: 100px;
+ padding-left: 100px;
+ padding-top: 30px;
+ padding-bottom: 30px;
+}
+
+.content {
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.gist-file {
+  font-size: 20px;
 }
