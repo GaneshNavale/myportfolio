@@ -1,9 +1,10 @@
 class ProjectsController < ApplicationController
 
   before_action :find_project, only: [:edit, :update, :show, :delete]
+  before_action :set_selected_tab
+
   def index
-    @projects = Project.all
-    @selected_tab = { project: :active }
+    @projects = Project.all    
   end
 
   def new 
@@ -34,6 +35,10 @@ class ProjectsController < ApplicationController
 
   def find_project
     @project = Project.find(params[:id])
+  end
+
+  def set_selected_tab
+    @selected_tab = { project: :active }
   end
 
   def project_params
