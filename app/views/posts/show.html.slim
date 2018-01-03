@@ -5,6 +5,6 @@ section#post
 		  	.title
 		      h1.orange.text-center= @post.title
 	      	h6.orange.text-center= @post.created_at.strftime('%b %d, %Y')	
-			.row
-				.content.padding-10
+			.row.col-sm-10.col-sm-offset-1
+				.content
 					= @post.body.html_safe

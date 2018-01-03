@@ -12,6 +12,7 @@ a:focus {
 .img-rounded {
   border-radius: 0;
 }
+
 hr {
   margin-top: 22px;
   margin-bottom: 22px;
@@ -319,8 +320,6 @@ hr {
     pointer-events: none;
 }
 
-
-
 /*---------------------------------------
    8 Footer section              
 -----------------------------------------*/
@@ -329,7 +328,6 @@ footer {
     padding-top: 20px;
     padding-bottom: 10px;
 }
-
 
 /*---------------------------------------
    10 Social icon             
@@ -495,13 +493,6 @@ footer, .send_msg {
 
 .space-10 {
   margin-left: 10px;
-}
-
-.padding-10 {
- padding-right: 100px;
- padding-left: 100px;
- padding-top: 30px;
- padding-bottom: 30px;
 }
 
 .content {

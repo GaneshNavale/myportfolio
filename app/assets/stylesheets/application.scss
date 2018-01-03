@@ -123,11 +123,40 @@ ul.primary li:hover > a{
   color: #000;
 } 
 
+.modBlogPost {
+  background: #f9f9f9 none repeat scroll 0 0;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  color: #333333;
+  margin: 0 0 45px;
+  padding: 0 40px;
+}
+
+.modBlogPost .title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-left: -40px;
+  margin-top: 2em;
+  text-align: center;
+}
+
 @media only screen and (max-width: 600px) {
+  
   .decor {
     padding: 3px;
   }
   
+  .modBlogPost .content {
+    padding-top: 1px;
+    font-size: 13px;
+    line-height: 25px;
+  }
+
+  .modBlogPost .title {
+    font-size: 10px;
+  }  
+
   li {
     float: none;
   }
@@ -161,26 +190,4 @@ ul.primary li:hover > a{
     color: #ccc;
     background: none;
   }
-}
-
-.modBlogPost {
-  background: #f9f9f9 none repeat scroll 0 0;
-  border: 1px solid #dddddd;
-  border-radius: 5px;
-  color: #333333;
-  margin: 0 0 45px;
-  padding: 0 40px;
-}
-
-.modBlogPost .content {
-  padding-top: 1px;
-}
-
-.modBlogPost .title {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 0;
-  margin-left: -40px;
-  margin-top: 2em;
-  text-align: center;
 }

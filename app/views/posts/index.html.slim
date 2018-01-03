@@ -5,17 +5,17 @@ section#portfolio
         = link_to 'Add New Post', new_post_path, class: 'btn btn-primary'
       br
     .modBlogPost
-      .row
-        - @posts.each do |post|
-          .row
-            .title
-              h2.orange= post.title
-              h6.orange= post.created_at.strftime('%b %d, %Y')
-            .read_more.content
-              = raw(post.body).truncate(3000).html_safe
-          .row
+      - @posts.each do |post|
+        .row
+          .title
+            h2.orange= post.title
+            h6.orange= post.created_at.strftime('%b %d, %Y')
+          .read_more.content
+            = raw(post.body).truncate(2500).html_safe
+        .row
+          .read_more
             = link_to 'READ MORE', post_path(post), class: 'btn btn-primary'
             - if user_signed_in? && current_user.have_permission?
               = link_to "Destroy",  post_path(post), method: :delete, class: "btn btn-primary space-10", data: { confirm: "Are you sure?" }
               = link_to 'Edit' , edit_post_path(post), class: 'btn btn-primary space-10'
-          br
+        br
