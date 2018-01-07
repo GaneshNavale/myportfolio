@@ -10,8 +10,8 @@ section#portfolio
           .title
             h2.orange= post.title
             h6.orange= post.created_at.strftime('%b %d, %Y')
-          .read_more.content
-            = raw(post.body).truncate(2500).html_safe
+          .content
+            = raw(post.body).truncate(2600).html_safe
         .row
           .read_more
             = link_to 'READ MORE', post_path(post), class: 'btn btn-primary'

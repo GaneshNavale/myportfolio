@@ -30,7 +30,7 @@ h3 {letter-spacing: 1px;}
 -----------------------------------------*/
 
 /* portfolio, about */
-#portfolio, #about, #post {
+#portfolio, #about, #post, .padding-top-80  {
     padding-top: 80px;
 }
 
@@ -502,4 +502,8 @@ footer, .send_msg {
 
 .gist-file {
   font-size: 20px;
+}
+
+.reset_password input {
+  width: 400px;
 }
