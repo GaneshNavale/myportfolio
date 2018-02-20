@@ -30,13 +30,13 @@ body {
   line-height: 1.42857143;
   color: #555555;
   background-color: #ffffff;
-  font-weight: 400;  
+  font-weight: 400;
 }
- 
+
 /* a little "umph" */
 .decor {
   background: #1385F9;
-  background: linear-gradient(left, white 50%, #1385F9 50%);
+  background: linear-gradient(to right, white 50%, #1385F9 50%);
   background-size: 50px 25%;;
   padding: 2px;
   display: block;
@@ -121,7 +121,7 @@ ul.primary li:hover a {
 
 ul.primary li:hover > a{
   color: #000;
-} 
+}
 
 .modBlogPost {
   background: #f9f9f9 none repeat scroll 0 0;
@@ -142,11 +142,11 @@ ul.primary li:hover > a{
 }
 
 @media only screen and (max-width: 600px) {
-  
+
   .decor {
     padding: 3px;
   }
-  
+
   .modBlogPost .content {
     padding-top: 1px;
     font-size: 13px;
@@ -155,12 +155,12 @@ ul.primary li:hover > a{
 
   .modBlogPost .title {
     font-size: 10px;
-  }  
+  }
 
   li {
     float: none;
   }
-  
+
   ul.primary li:hover a {
     background: none;
     color: #8B8B8B;
@@ -172,20 +172,20 @@ ul.primary li:hover > a{
     background: #272727;
     color: #fff;
   }
-  
+
   ul.sub {
-    display: block;  
+    display: block;
     position: static;
     box-shadow: none;
     width: 100%;
   }
-  
+
   ul.sub li a {
     background: #272727;
   	border: none;
     color: #8B8B8B;
   }
-  
+
   ul.sub li a:hover {
     color: #ccc;
     background: none;
