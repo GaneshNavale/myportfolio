@@ -12,12 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require bootstrap-sprockets
 //= require ckeditor/init
 //= require_tree .
 
-$(document).ready(function () {	
+$(document).ready(function () {
 
   $('.login-tab li a, .login-modal button.close').on('click', function() {
       $('.devise_error_messages').html('');
@@ -27,16 +26,16 @@ $(document).ready(function () {
     $('.send_msg').attr('disabled', true);
   });
   $(document).on("scroll", onScroll);
-  
+
   $('a[href^="#"]').on('click', function (e) {
     e.preventDefault();
     $(document).off("scroll");
-    
+
     $('a').each(function () {
         $(this).parent().removeClass('active');
     })
     $(this).parent().addClass('active');
-  
+
     var target = this.hash,
         menu = target;
     $target = $(target);
