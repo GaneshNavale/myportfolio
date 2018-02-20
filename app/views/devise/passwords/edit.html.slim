@@ -1,8 +1,8 @@
-.container.padding-top-80
+.container.padding-top-100
   .well.col-sm-12.text-center
-    h2= 'Change your password'   
+    h2= 'Change your password'
     .reset_password
-      = form_for(resource, as: resource_name, url: password_path(resource_name), 
+      = form_for(resource, as: resource_name, url: password_path(resource_name),
         html: { method: :put }) do |f|
         = devise_error_messages!
         = f.hidden_field :reset_password_token

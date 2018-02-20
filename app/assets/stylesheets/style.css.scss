@@ -26,12 +26,12 @@ h3 {letter-spacing: 1px;}
 
 
 /*---------------------------------------
-   0 General               
+   0 General
 -----------------------------------------*/
 
 /* portfolio, about */
-#portfolio, #about, #post, .padding-top-80  {
-    padding-top: 80px;
+#portfolio, #about, #post, #contact, .padding-top-100  {
+    padding-top: 100px;
 }
 
 /* portfolio, footer */
@@ -54,7 +54,7 @@ hr {
 
 
 /*---------------------------------------
-   1 Preloader section              
+   1 Preloader section
 -----------------------------------------*/
 .preloader {
   position: fixed;
@@ -107,7 +107,7 @@ hr {
 }
 
 /*---------------------------------------
-   3 Home section              
+   3 Home section
 -----------------------------------------*/
 #home_page {
     background: asset-data-url('home.jpg') no-repeat;
@@ -126,7 +126,7 @@ hr {
           align-items: center;
     height: 100vh;
     width: 100%;
-    text-align: center;    
+    text-align: center;
 }
 
 #home_page h1 {
@@ -150,12 +150,12 @@ hr {
 }
 
 #home_page .btn:hover {
-    background: #1385F9;    
+    background: #1385F9;
     border-color: transparent;
 }
 
 /*---------------------------------------
-   5 Portfolio section              
+   5 Portfolio section
 -----------------------------------------*/
 #portfolio {
     background: #ffffff;
@@ -166,7 +166,7 @@ hr {
     overflow: hidden;
     margin: 0;
     position: relative;
-} 
+}
 
 #portfolio .portfolio-thumb .portfolio-overlay {
     background: #007FFF;
@@ -260,7 +260,7 @@ hr {
     width: 100%;
     height: 100%;
     overflow: hidden;
-} 
+}
 
 .fluid-img {
     width: 100%;
@@ -269,13 +269,8 @@ hr {
 
 
 /*---------------------------------------
-   7 Contact section              
+   7 Contact section
 -----------------------------------------*/
-#contact {
-    background: #101010;
-    color: #ffffff;
-    height: 800px;
-}
 
 #contact .form-control {
     background: transparent;
@@ -321,7 +316,7 @@ hr {
 }
 
 /*---------------------------------------
-   8 Footer section              
+   8 Footer section
 -----------------------------------------*/
 footer {
     text-align: center;
@@ -330,7 +325,7 @@ footer {
 }
 
 /*---------------------------------------
-   10 Social icon             
+   10 Social icon
 -----------------------------------------*/
 
 .social-icon li {
@@ -361,7 +356,7 @@ footer {
 }
 
 /*---------------------------------------
-   11 Responsive styles            
+   11 Responsive styles
 -----------------------------------------*/
 
 @media screen and ( max-width: 980px ){
@@ -372,7 +367,7 @@ footer {
 
 #about .about-des h1 {
     font-size: 50px;
- } 
+ }
 
 }
 
@@ -390,7 +385,7 @@ footer {
 
 @media screen and ( max-width: 768px ){
 
-footer .facebook, footer .twitter, 
+footer .facebook, footer .twitter,
 footer .instagram {
     padding: 40px 30px 80px 30px;
  }
@@ -422,13 +417,13 @@ footer .instagram {
 }
 
 #about {
-    line-height: 25px; 
-    float:none !important; 
+    line-height: 25px;
+    float:none !important;
     margin-top: 100px;
-    margin-bottom:  100px;  
+    margin-bottom:  100px;
 }
 
-.navbar-toggle .icon-bar { 
+.navbar-toggle .icon-bar {
   background: #1385F9;
   border-color: transparent;
 }
@@ -456,7 +451,7 @@ footer, .send_msg {
 }
 
 .form-group {
-  font-size: 18px; 
+  font-size: 18px;
 }
 
 .section-layout {
