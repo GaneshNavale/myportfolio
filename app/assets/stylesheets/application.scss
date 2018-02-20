@@ -36,7 +36,7 @@ body {
 /* a little "umph" */
 .decor {
   background: #1385F9;
-  background: linear-gradient(to right, white 50%, #1385F9 50%);
+  background: linear-gradient(to left, white 50%, #1385F9 50%);
   background-size: 50px 25%;;
   padding: 2px;
   display: block;
@@ -72,10 +72,10 @@ ul:after {
 nav {
   position: relative;
   background: #2B2B2B;
-  background-image: -webkit-linear-gradient(bottom, #2B2B2B 7%, #333333 100%);
-  background-image: -moz-linear-gradient(bottom, #2B2B2B 7%, #333333 100%);
-  background-image: -o-linear-gradient(bottom, #2B2B2B 7%, #333333 100%);
-  background-image: linear-gradient(bottom, #2B2B2B 7%, #333333 100%);
+  background-image: -webkit-linear-gradient(to bottom, #2B2B2B 7%, #333333 100%);
+  background-image: -moz-linear-gradient(to bottom, #2B2B2B 7%, #333333 100%);
+  background-image: -o-linear-gradient(to bottom, #2B2B2B 7%, #333333 100%);
+  background-image: linear-gradient(to bottom, #2B2B2B 7%, #333333 100%);
   letter-spacing: 1px;
   box-shadow: 1px 1px 1px #888;
   border-bottom-right-radius: 8px;
