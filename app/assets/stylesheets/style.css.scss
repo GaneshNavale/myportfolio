@@ -275,7 +275,7 @@ hr {
 #contact .form-control {
     background: transparent;
     box-shadow: none;
-    color: #ffffff;
+    color: #7a7c7f;
     margin-bottom: 20px;
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
@@ -283,7 +283,8 @@ hr {
 
 #contact .form-control:focus,
 #contact .form-control:hover {
-    background: #404040;
+    background: #7a7c7f;
+    color: #ffffff;
     border-color: transparent;
 }
 
