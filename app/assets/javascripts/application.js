@@ -14,6 +14,8 @@
 //= require jquery_ujs
 //= require bootstrap-sprockets
 //= require ckeditor/init
+//= require prism
+//= require prism-ruby
 //= require_tree .
 
 $(document).ready(function () {

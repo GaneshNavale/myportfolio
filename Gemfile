@@ -20,6 +20,7 @@ gem 'coffee-rails', '~> 4.1.0'
 # gem 'therubyracer', platforms: :ruby
 gem 'slim'
 gem 'sidekiq'
+gem 'highlighting'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

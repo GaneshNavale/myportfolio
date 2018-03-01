@@ -21,7 +21,6 @@ class PostsController < ApplicationController
       flash[:alert] = "Error creating new post!"
       render :new
     end
-    redirect_to posts_path
   end
 
   def edit
@@ -64,5 +63,5 @@ class PostsController < ApplicationController
   def set_selected_tab
     @selected_tab = { blog: :active }
   end
-    
+
 end
