@@ -2,12 +2,13 @@ class ProjectsController < ApplicationController
 
   before_action :find_project, only: [:edit, :update, :show, :delete]
   before_action :set_selected_tab
+  before_action :redirect_if_access_denied, except: [:index, :show]
 
   def index
-    @projects = Project.all    
+    @projects = Project.all
   end
 
-  def new 
+  def new
     @project = Project.new
   end
 
@@ -20,7 +21,7 @@ class ProjectsController < ApplicationController
   def edit
   end
 
-  def show    
+  def show
   end
 
   def update
@@ -28,10 +29,10 @@ class ProjectsController < ApplicationController
     redirect_to projects_path
   end
 
-  def delete    
+  def delete
   end
 
-  private 
+  private
 
   def find_project
     @project = Project.find(params[:id])

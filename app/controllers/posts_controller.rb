@@ -2,6 +2,7 @@ class PostsController < ApplicationController
 
 	before_action :find_post, only: [:edit, :update, :show, :destroy]
   before_action :set_selected_tab
+  before_action :redirect_if_access_denied, except: [:index, :show]
 
   def index
     @posts = Post.all
