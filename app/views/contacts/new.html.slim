@@ -8,33 +8,33 @@
 			<br>
 			<div class='flash_messages'> </div>
 			<div class="col-md-12 col-sm-12">
-				<h2 class="wow bounceIn animated">Want to say hello? Send me a message…</h2>
+				<h2 class="">Want to say hello? Send me a message…</h2>
 				<hr>
 			</div>
 			<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
 				<br><br>
 				= form_for @contact, remote: true do |contact|
-					<div class="col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.3s" style="animation-delay: 0.3s; animation-name: none;">
+					<div class="col-md-6 col-sm-6">
 						<div class="form-group left-inner-addon">
 							<span class="fa fa-paper-plane"></span>
 							= contact.text_field :name, class: "form-control name_txt", placeholder: "Name"
 							<div class ='error'></div>
 						</div>
 					</div>
-					<div class="col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.6s" style="animation-delay: 0.6s; animation-name: none;">
+					<div class="col-md-6 col-sm-6">
 						<div class="form-group left-inner-addon">
 							<span class="fa fa-envelope-o" aria-hidden="true"></span>
 							= contact.email_field :email, class: "form-control email_txt", placeholder: "Email"
 							<div class ='error'></div>
 						</div>
 					</div>
-					<div class="col-md-12 col-sm-12 wow fadeIn" data-wow-delay="0.9s" style="animation-delay: 0.9s; animation-name: none;">
+					<div class="col-md-12 col-sm-12">
 						<div class="form-group">
 							= contact.text_area :message, class: "form-control message_txt", placeholder: "Message", rows: 8
 							<div class ='error'></div>
 						</div>
 					</div>
-					<div class="row wow fadeIn text-center" data-wow-delay="0.3s" style="animation-delay: 0.3s; animation-name: none;">
+					<div class="row">
 						= contact.submit 'Send Message',class: "send_msg btn btn-primary"
 					</div>				
 				<br><br>
