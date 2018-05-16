@@ -48,6 +48,7 @@ gem 'bootstrap', '~> 4.0.0.alpha6'
 
 gem 'figaro'
 gem 'puma'
+gem 'friendly_id', '~> 5.1.0'
 group :development do
   gem 'capistrano'
   gem 'capistrano3-puma'
