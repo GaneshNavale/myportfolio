@@ -32,7 +32,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'passenger'
 gem 'devise'
-gem 'server_side_validation', git: 'git@github.com:GaneshNavale/show_validation_errors.git'
+gem 'server_side_validation'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
