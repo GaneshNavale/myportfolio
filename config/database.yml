@@ -1,7 +1,6 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  host: localhost
   port: 5432
   pool: 5
   username: <%= ENV['DATABASE_USERNAME'] %>
@@ -12,8 +11,15 @@ test:
 
 development:
   <<: *default
+  host: localhost
   database: myportfolio_development
 
 production:
   <<: *default
-  database: myportfolio_production
+  adapter: postgresql
+  encoding: utf8
+  database: <%= ENV['RDS_DB_NAME'] %>
+  username: <%= ENV['RDS_USERNAME'] %>
+  password: <%= ENV['RDS_PASSWORD'] %>
+  host: <%= ENV['RDS_HOSTNAME'] %>
+  port: <%= ENV['RDS_PORT'] %>
