@@ -12,7 +12,8 @@ class ContactsController < ApplicationController
 	def create
 		@contact = Contact.new(contact_params)
 		if @contact.save
-			EmailWorker.perform_async(@contact.id)
+			# Temp avoiding sidekiq for eb due to configuration issue.
+			# EmailWorker.perform_async(@contact.id)
 			flash.now[:success] = 'Message was delivered succesfully.'
 		else
 			show_validation_errors(@contact)
